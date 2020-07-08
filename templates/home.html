@@ -8,6 +8,7 @@
   Hi {{ user.username }}!
   <p><a href="{% url 'account_logout' %}">logout</a></p>
   <p><a href="{% provider_login_url 'github' process='connect' %}">Connect you GitHub</a></p>
+  <p><a href="{% provider_login_url 'stripe' process='connect' %}">Connect you Stripe</a></p>
 {% else %}
   <p>You are not logged in</p>
   <div>
